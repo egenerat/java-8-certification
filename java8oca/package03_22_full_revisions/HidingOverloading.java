@@ -1,50 +1,46 @@
 package package03_22_full_revisions;
 
 class HidingOverloading{
-	String value = "parentValue";
-	static String childStaticString = "AAA";
+	// String value = "parentValue";
+	// static String childStaticString = "AAA";
 
 	public static void main(String[] args){
-		HidingOverloading aParentObject = new HidingOverloading();
-		aParentObject.aMethod();
+		// HidingOverloading aParent = new HidingOverloading();
+		// aParent.testParent();
 		
 		Child aChildObject = new Child();
-		aChildObject.aMethod();
-
-		HidingOverloading.aStaticMethod();
-		Child.aStaticMethod();
-
-		HidingOverloading parentReferenceChildObject = new Child();
-		parentReferenceChildObject.aStaticMethod(); // parent method is called
-		parentReferenceChildObject.aMethod();
-
-		parentReferenceChildObject.testHidden();
+		aChildObject.testParent();
+		aChildObject.testChild();
 	}
 
-	void aMethod(){
-		System.out.println("parent: "+value);
+	int getAge(){
+		return 50;
 	}
 
-	void testHidden(){
-		aStaticMethod();
+	static String getDescription(){
+		return "Parent static method";
 	}
 
-	static void aStaticMethod(){
-		System.out.println("Parent static method "+childStaticString);
+	void testParent(){
+		System.out.println(getAge() + getDescription());
 	}
 }
-	
+
 class Child extends HidingOverloading{
-	String value = "childValue";
-	static String childStaticString = "BBB";
+	// String value = "childValue";
+	// static String childStaticString = "BBB";
 
 	// Override
-	void aMethod(){
-		System.out.println("child: "+value);	
+	int getAge(){
+		return 25;
 	}
 
+	// Hide
+	static String getDescription(){
+		return "Hiding method";
+	}
 
-	static void aStaticMethod(){
-		System.out.println("Child method hide parent"+childStaticString);
+	void testChild(){
+		System.out.println(getAge() + getDescription());
 	}
 }
