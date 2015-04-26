@@ -1,0 +1,3 @@
+- Before checking references with ==, make sure the two variables are the same type, otherwise does not compile
+- StringBuilder.substring() returns a string, does not update the variable (same behaviour as substring on a string)
+- ArrayList: null does not require autoboxing
