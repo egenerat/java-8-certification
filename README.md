@@ -1,4 +1,2 @@
 # java8-oca
-Scratchpad for OCA certification
-
-test
+Scratchpad for Java 8 OCA certification

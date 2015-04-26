@@ -1,4 +1,4 @@
-package package02_21;
+package chap2OperatorsAndStatements;
 
 public class Operations{
 
