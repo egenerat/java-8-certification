@@ -1,3 +1,38 @@
+Be careful
+
+- public void eat(int piecesOfCheese){
+	int bitesOfCheese = 1;
+}
+2 local variables are declared
+- a variable is local to its scope
+- Be careful with immutable types: String
+
+- Arrays:
+	- {true, true} is not a valid array declaration without new boolean[2]
+
+byte<short<int<long
+float<double
+
+- Local variables require initializing them before referencing
+- Instance variables have a default value
+
+- Package: folders underneath the current path
+- An assignation returns the value on the right
+
 - Before checking references with ==, make sure the two variables are the same type, otherwise does not compile
 - StringBuilder.substring() returns a string, does not update the variable (same behaviour as substring on a string)
 - ArrayList: null does not require autoboxing
+
+
+Chapter 4:
+- Labels are not allowed for methods
+- JavaBeans naming conventions: for a boolean: isVariableName(), not get!
+- Static method can be called on an instance variable assigned to null
+- Difference between initializer and static initializer: if the class is never instantiated, the initializer is never called.
+- Final attributes must be declared exactly once, in declaration OR in static initializer. Otherwise compilation error, plus one for each other line it is declared.
+- this() is only callable if the constructor is declared (not valid for default constructor)
+- Lambdas:
+	- return and ; required only if {return 1;}
+	If type is specified, the parenthesis are required (String s)
+	- Be careful with Lambda parameters type: Check matching interface if needed
+
