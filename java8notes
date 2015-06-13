@@ -1,6 +1,0 @@
-3 comments type :
-- single-line //
-- multi-line /* */
-- Javadoc /** */
-
-Maximum one public class per file : matches the filename

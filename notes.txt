@@ -1,3 +1,11 @@
+3 comments type :
+- single-line //
+- multi-line /* */
+- Javadoc /** */
+
+Maximum one public class per file : matches the filename
+
+
 Be careful
 
 - public void eat(int piecesOfCheese){
@@ -36,3 +44,14 @@ Chapter 4:
 	If type is specified, the parenthesis are required (String s)
 	- Be careful with Lambda parameters type: Check matching interface if needed
 
+Chapter 5:
+- A variable (even public) can be hidden but not overriden
+- Abstract modifier is not implicitly applied to all methods since some can be declared as default
+- A method with a body in an interface must be declared static or default
+- An interface does not inherit fron Object
+- Private methods can be hidden but not overriden: a reference of superclass type will always calll superclass method
+
+Difference between:
+- overload
+- override
+- hide
