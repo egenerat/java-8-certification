@@ -55,3 +55,11 @@ Difference between:
 - overload
 - override
 - hide
+
+Be careful
+A variable declared as Object can refer any variable whose class inherits Object
+Any Object can not be passed as a parameter to a function taking an Object subclass parameter
+
+
+final keyword in a method declaration to indicate that the method cannot be overridden by subclasses
+Instance methods are preferred over interface default methods (case where extends one class implements another)
