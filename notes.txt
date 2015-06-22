@@ -24,7 +24,7 @@ float<double
 - Local variables require initializing them before referencing
 - Instance variables have a default value
 
-- Package: folders underneath the current path
+- Package: folders underneath the current path. A java file can be built from any folder (Compile even if the package is not correct). Be careful at runtime. 
 - An assignation returns the value on the right
 
 - Before checking references with ==, make sure the two variables are the same type, otherwise does not compile
@@ -63,3 +63,10 @@ Any Object can not be passed as a parameter to a function taking an Object subcl
 
 final keyword in a method declaration to indicate that the method cannot be overridden by subclasses
 Instance methods are preferred over interface default methods (case where extends one class implements another)
+
+If a method is declared as abstract, it can not have a body declared. Pay attention to empty body {}
+
+
+Chap6: Exceptions
+
+Be careful, new Exception() does not raise the exception! The keyword throw is mandatory
