@@ -70,3 +70,5 @@ If a method is declared as abstract, it can not have a body declared. Pay attent
 Chap6: Exceptions
 
 Be careful, new Exception() does not raise the exception! The keyword throw is mandatory
+- A method that declares an exception is not required to throw one
+- Runtime exceptions/Errors can be thrown in any method
