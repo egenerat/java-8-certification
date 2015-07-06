@@ -1,4 +1,4 @@
-package package2;
+package chap1Blocks;
 import java.util.ArrayList;
 
 public class ClassB{
@@ -13,6 +13,7 @@ public class ClassB{
 	private int $allowed;
 	private int allowed$;
 	private int _allowed;
+	private int $;
 
 //forbidden
 	//private int $iden*tifier;
