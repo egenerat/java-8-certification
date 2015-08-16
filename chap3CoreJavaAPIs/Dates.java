@@ -12,5 +12,9 @@ class Dates{
 		System.out.println(LocalDate.of(2015, Month.APRIL, 1));
 		System.out.println(LocalDate.of(2015, Calendar.APRIL, 1));
 		System.out.println(LocalDate.of(2015, Calendar.MAY, 1).equals(LocalDate.of(2015, Month.APRIL, 1)));
+
+		System.out.println(Period.ofMonths(1));
+		System.out.println(Period.ofMonths(1).ofDays(2));
+		System.out.println(Period.ofDays(2));
 	}
 }

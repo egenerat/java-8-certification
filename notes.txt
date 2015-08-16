@@ -67,8 +67,30 @@ Instance methods are preferred over interface default methods (case where extend
 If a method is declared as abstract, it can not have a body declared. Pay attention to empty body {}
 
 
+An interface may inherit two abstract methods with the same signature
+
+
 Chap6: Exceptions
 
 Be careful, new Exception() does not raise the exception! The keyword throw is mandatory
 - A method that declares an exception is not required to throw one
 - Runtime exceptions/Errors can be thrown in any method
+
+
+
+_______________________
+To be sorted:
+
+Autoboxing work for collections not inferring predicates???
+
+
+
+_______________________
+Questions:
+import java.util.*;
+import java.sql.*;
+Does it compile if there is no call to Date?
+
+Hiding/Overriding:
+- q8
+- q11 code to undestand
