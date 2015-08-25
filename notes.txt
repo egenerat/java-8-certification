@@ -31,6 +31,10 @@ float<double
 - StringBuilder.substring() returns a string, does not update the variable (same behaviour as substring on a string)
 - ArrayList: null does not require autoboxing
 
+Unboxing null generates a NullPointerException
+int value = (Integer) null;
+If r is a reference of type Integer, then unboxing conversion converts r into r.intValue()
+
 
 Chapter 4:
 - Labels are not allowed for methods
