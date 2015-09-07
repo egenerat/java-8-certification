@@ -48,6 +48,9 @@ Chapter 4:
 	If type is specified, the parenthesis are required (String s)
 	- Be careful with Lambda parameters type: Check matching interface if needed
 
+- Autoboxing does not work for predicates
+
+
 Chapter 5:
 - A variable (even public) can be hidden but not overriden
 - Abstract modifier is not implicitly applied to all methods since some can be declared as default
