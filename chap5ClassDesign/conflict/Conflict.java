@@ -7,16 +7,19 @@ interface ParentA{
 }
 
 interface ParentB{
-	default public void method(){
-		System.out.println("Parent B");
-	}	
+	public void method();
 }
 
 interface ParentC extends ParentB{
 	default public void method(){
 		System.out.println("Parent C");
-	}	
+	}
 }
+
+interface ParentD{
+	public void method();
+}
+
 
 // error: class Conflict inherits unrelated defaults for method() from types ParentA and ParentB
 /*public class Conflict implements ParentA, ParentB{
@@ -25,7 +28,10 @@ interface ParentC extends ParentB{
 	}
 }*/
 
-public class Conflict implements ParentA, ParentC{
+
+public abstract class Conflict implements ParentD, ParentB{
+	// public void method(){}
+
 	public static void main(String... args){
 		System.out.println("Conflict");
 	}
