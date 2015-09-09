@@ -84,6 +84,12 @@ Be careful, new Exception() does not raise the exception! The keyword throw is m
 - Runtime exceptions/Errors can be thrown in any method
 
 
+General exam questions:
+Be careful with allowed/required:
+Checked exceptions are allowed to be declared or thrown
+Checked exceptions are required to be declared or thrown
+
+Both seem correct according to correction
 
 _______________________
 To be sorted:
