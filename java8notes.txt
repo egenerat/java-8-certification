@@ -73,8 +73,11 @@ Instance methods are preferred over interface default methods (case where extend
 
 If a method is declared as abstract, it can not have a body declared. Pay attention to empty body {}
 
-
 An interface may inherit two abstract methods with the same signature
+
+All methods within abstract classes and interfaces are assumed to be abstract: wrong, an abstract class may contain concrete methods.
+
+A class that implements an interface do not need to implement inherited methods if the class is abstract.
 
 
 Chap6: Exceptions
@@ -91,6 +94,12 @@ Checked exceptions are required to be declared or thrown
 
 Both seem correct according to correction
 
+A method that declares an exception is not required to throw one
+/!\ In a catch, an exception catched must be declared by one of the methods in the try, otherwise unreachable code
+
+If two exceptions are thrown (the second in finally) only the second is displayed
+
+Be careful: runtime Exception are not required to be declared: questions: which lines can be inserted so that the code compiles
 _______________________
 To be sorted:
 
