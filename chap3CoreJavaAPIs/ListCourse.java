@@ -33,9 +33,16 @@ public class ListCourse{
 		aList.set(0, "Bonjour");
 		Arrays.toString(array2);
 		displayList(aList);
+
+		List<Integer> list1 = new ArrayList<>();
+		list1.add(1);
+		List<Integer> list2 = new ArrayList<>();
+		list2.add(1);
+		System.out.println(list1.equals(list2));
+
 	}
-	public static void displayList(Iterable<String> anIterable){
-		for(String i : anIterable){
+	public static <T> void displayList(Iterable<T> anIterable){
+		for(T i : anIterable){
 			System.out.println(i);
 		}
 	}

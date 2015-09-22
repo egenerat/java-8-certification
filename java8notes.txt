@@ -58,15 +58,18 @@ Chapter 3
 
 - += equivalent to an explicit cast (String a; a+=2 is valid)
 
+It is not possible to chain on a collection (returns boolean) .add()
 
-
-TODO 2 questions !!!!!!!!!!
 binarySearch implemented for Arrays and Collections
-Integer.parseInt does NOT?? returns Integer
-valueOf?
+Arrays.binarySearch()
+Collection.binarySearch()
 
-Equals (deep content) implemented for array? NO??
-collections? YES??
+int Integer.parseInt(String s)
+Integer Integer.valueOf(int)
+
+equals 
+- Arrays: does not check the content, only rference equality
+- Collections: content equality
 
 _______________________________________________
 Chapter 4:
