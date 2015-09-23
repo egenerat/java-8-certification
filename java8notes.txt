@@ -28,6 +28,16 @@ Be careful
 - Arrays:
 	- {true, true} is not a valid array declaration without new boolean[2]
 
+
+
+
+int[] array1 = {1, 2, 3, 4, 5, 6, ,7, 8}; - working
+array1 = {1, 1, 1, 1, 2, 5, ,7, 8}; - NOT working
+array = new int[] {1, 1, 2, 3, 5, 8};
+
+
+
+
 byte<short<int<long
 float<double
 
@@ -70,6 +80,10 @@ Integer Integer.valueOf(int)
 equals 
 - Arrays: does not check the content, only rference equality
 - Collections: content equality
+
+Varargs:
+- A list can not be passed as a varargs parameter. Use toArray() instead
+- varargs (String...) can be called without any parameter ()
 
 _______________________________________________
 Chapter 4:

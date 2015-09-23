@@ -40,10 +40,15 @@ public class ListCourse{
 		list2.add(1);
 		System.out.println(list1.equals(list2));
 
+		// A list can not be passed as a varargs parameter directly
+		methodWithVarargs(list1.toArray(new Integer[list1.size()]));
+		methodWithVarargs(new Integer[]{1});
 	}
 	public static <T> void displayList(Iterable<T> anIterable){
 		for(T i : anIterable){
 			System.out.println(i);
 		}
 	}
+
+	public static void methodWithVarargs(Integer ...varArg){}
 }
