@@ -6,6 +6,53 @@
 Maximum one public class per file : matches the filename
 
 
+Glossary:
+- accessor method: Method used to read an instance variable (= getter)
+- mutator method: <ethod used to change the value of an instance variable (= setter)
+
+
+
+- member: a field or method in a class
+- field: = instance (non-static) variable in a class
+
+- local variable: A variable defined within a method, including method parameters. Not initialized by default.
+
+- mutable: an object that can change state
+- immutable: an object that cannot be changed
+
+- label: A pointer to the head of a statement thata allows the application flow to jump to it or break from it. A label is a single-word expression followed by a colon (:).
+
+- litteral: A numeric, character, boolean or String value that is typed in the code
+
+- negation operator: (-) reverses the sign of a numeric expression
+- ternary operator = conditional operator
+- equality operator ==: works with 2 primitive types, boolean values, or  object references are the same /
+
+- logical complement operator: given a boolean expression, the operator ! returns the reverse of it.
+
+- numeric promotion: automatic upcast the data type of a smaller data type to a larger data type, as well as update an integral value to a floating point value
+
+- overflow: when a number calue is too large to fit in a data type and the value automatically warps around to the lowest possible value, and counts up from there
+
+- parameter: the name of the variable in the method signature that is assigned the VALUE of the argument (pass-by-value)
+
+- property: What a JavaBean calls an instance variable
+
+- string pool: An area in the JVM where string litterals are stored. The JVM can optimize the use of string litterals by allowing only one instance of a string in a pool.
+- switch statement: A complex decision-making structure in which a single value is evaluated and control jumps to a particular case statement or default block and continues until a break statement is reached or the switch statement finishes. Switch values may be bytes, shorts, chars, ints, enums, as well as classes that wrap primitive data types.
+- for each loop: iterate over Java built-in arrays or objects that implements java.lang.Iterable
+
+
+- underflow: When a number value is too small to fit in a data type and the value automatically wraps around to the highest possible value, and counts down from there.
+
+- update statement: the section of a basic for loop that is executed at the end of the loop before the boolean expression is evaluated again. 
+
+- break != continue
+break: A statement within a switch, while, do-while, or for statement that causes the control flow to exit the structure and returns control to the enclosing statement.
+continue: A statement within a while, do-while, or for loop that causes the flow to stop the execution of the ccurrent iteration and go on to the next.
+- deferred execution: A situation in which there is a block of code that will be run later (eg. lambda)
+
+
 _______________________________________
 General questions:
 
@@ -112,6 +159,8 @@ compilation error if declared 0 or > 1 times
 
 _______________________________________________
 Chapter 5:
+- inheritance: The process by which the new child subclass automatically includes any public or protected primitives, objects, or methods defined in the parent class (no private)
+
 - A variable (even public) can be hidden but not overriden
 - Abstract modifier is not implicitly applied to all methods since some can be declared as default
 - A method with a body in an interface must be declared static or default
