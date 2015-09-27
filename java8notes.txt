@@ -102,6 +102,12 @@ Unboxing null generates a NullPointerException
 int value = (Integer) null;
 If r is a reference of type Integer, then unboxing conversion converts r into r.intValue()
 
+
+_______________________________________________
+Chapter 4
+
+-  Identifier first name must be _ $ or a letter (not a digit)
+
 _______________________________________________
 Chapter 3
 
@@ -122,7 +128,8 @@ Arrays.binarySearch()
 Collection.binarySearch()
 
 int Integer.parseInt(String s)
-Integer Integer.valueOf(int)
+Integer Integer.valueOf(String s)
+Integer Integer.valueOf(int s)
 
 equals 
 - Arrays: does not check the content, only rference equality
