@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListCourse{
-	public static void main(String... args){
+public class ListCourse {
+	public static void main(String... args) {
 		List<String> aList = new ArrayList<String>();
 		aList.add("Hello");
 
@@ -22,12 +22,13 @@ public class ListCourse{
 
 		System.out.println("=================");
 
-		String[] array2 = {"Hello", "world"};
+		String[] array2 = { "Hello", "world" };
 		aList = Arrays.asList(array2);
 		displayList(aList);
 		array2[1] = "Emile !!!";
 		displayList(aList);// Hello Emile!!!
-		// Be careful, with asList, the changes in the array are reflected in the list.
+		// Be careful, with asList, the changes in the array are reflected in
+		// the list.
 		// The reverse is not true!
 
 		aList.set(0, "Bonjour");
@@ -42,13 +43,15 @@ public class ListCourse{
 
 		// A list can not be passed as a varargs parameter directly
 		methodWithVarargs(list1.toArray(new Integer[list1.size()]));
-		methodWithVarargs(new Integer[]{1});
+		methodWithVarargs(new Integer[] { 1 });
 	}
-	public static <T> void displayList(Iterable<T> anIterable){
-		for(T i : anIterable){
+
+	public static <T> void displayList(Iterable<T> anIterable) {
+		for (T i : anIterable) {
 			System.out.println(i);
 		}
 	}
 
-	public static void methodWithVarargs(Integer ...varArg){}
+	public static void methodWithVarargs(Integer... varArg) {
+	}
 }

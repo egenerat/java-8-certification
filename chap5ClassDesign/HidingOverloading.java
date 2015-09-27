@@ -1,46 +1,46 @@
 package chap5ClassDesign;
 
-class HidingOverloading{
+class HidingOverloading {
 	// String value = "parentValue";
 	// static String childStaticString = "AAA";
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		// HidingOverloading aParent = new HidingOverloading();
 		// aParent.testParent();
-		
+
 		Child aChildObject = new Child();
 		aChildObject.testParent();
 		aChildObject.testChild();
 	}
 
-	int getAge(){
+	int getAge() {
 		return 50;
 	}
 
-	static String getDescription(){
+	static String getDescription() {
 		return "Parent static method";
 	}
 
-	void testParent(){
+	void testParent() {
 		System.out.println(getAge() + getDescription());
 	}
 }
 
-class Child extends HidingOverloading{
+class Child extends HidingOverloading {
 	// String value = "childValue";
 	// static String childStaticString = "BBB";
 
 	// Override
-	int getAge(){
+	int getAge() {
 		return 25;
 	}
 
 	// Hide
-	static String getDescription(){
+	static String getDescription() {
 		return "Hiding method";
 	}
 
-	void testChild(){
+	void testChild() {
 		System.out.println(getAge() + getDescription());
 	}
 }

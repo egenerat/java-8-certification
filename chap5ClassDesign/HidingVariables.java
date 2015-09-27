@@ -1,17 +1,17 @@
 package chap5ClassDesign;
 
-class Parent{
+class Parent {
 	public int var = 1;
 }
 
-public class HidingVariables extends Parent{
+public class HidingVariables extends Parent {
 	public int var = 2;
 
-	public int getVariable(){
+	public int getVariable() {
 		return super.var;
 	}
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		Parent p = new Parent();
 		HidingVariables hv = new HidingVariables();
 		System.out.println("Parent: " + p.var);

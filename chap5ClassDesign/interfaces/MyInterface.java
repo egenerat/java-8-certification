@@ -1,5 +1,5 @@
 package chap5ClassDesign.interfaces;
 
-interface MyInterface{
+interface MyInterface {
 	public void myMethod();
 }

@@ -1,7 +1,7 @@
 package chap3CoreJavaAPIs;
 
-public class WrapperClasses{
-	public static void main(String... args){
+public class WrapperClasses {
+	public static void main(String... args) {
 		boolean aBool;
 		Boolean aBooleanWrapperClass;
 

@@ -1,16 +1,15 @@
 package chap6Exceptions;
 
-class NoExceptionThrown{
-	public static void main(String... args){
-		try{
+class NoExceptionThrown {
+	public static void main(String... args) {
+		try {
 			new NoExceptionThrown().willRaiseAnExceptionInFuture();
-		}
-		catch(Exception e){
+		} catch (Exception e) {
 
 		}
 	}
 
-	void willRaiseAnExceptionInFuture() throws Exception{
+	void willRaiseAnExceptionInFuture() throws Exception {
 
-	} 
+	}
 }

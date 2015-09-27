@@ -1,9 +1,9 @@
 package chap3CoreJavaAPIs;
 
-public class Strings{
-	public static void main(String[] args){
+public class Strings {
+	public static void main(String[] args) {
 
-		//String Buffer declarations
+		// String Buffer declarations
 		StringBuffer sb = new StringBuffer();
 		StringBuffer sb2 = new StringBuffer("Initial string");
 
@@ -11,7 +11,7 @@ public class Strings{
 		// String aString = 1;
 
 		// even with explicit cast
-		//String aString = (String)1;
+		// String aString = (String)1;
 
 		String aString2 = "string";
 

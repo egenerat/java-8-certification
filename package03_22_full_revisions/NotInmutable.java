@@ -1,34 +1,35 @@
 package package03_22_full_revisions;
 
-class NotInmutable{
+class NotInmutable {
 	private StringBuilder sb;
 
-	public NotInmutable(StringBuilder sb){
+	public NotInmutable(StringBuilder sb) {
 		this.sb = sb;
 	}
 
-	public NotInmutable(StringBuilder sb, boolean isInmutable){
+	public NotInmutable(StringBuilder sb, boolean isInmutable) {
 		// Protected constructor: defensive copy
-		if(isInmutable){
+		if (isInmutable) {
 			this.sb = new StringBuilder(sb);
 		}
 	}
 
-	public StringBuilder getSb(){
+	public StringBuilder getSb() {
 		return sb;
 	}
 
-	public StringBuilder getProtectedSb(){
+	public StringBuilder getProtectedSb() {
 		return new StringBuilder(sb);
 	}
 
-	public static void main(String... args){
+	public static void main(String... args) {
 		StringBuilder original = new StringBuilder("My initial string");
 		NotInmutable a = new NotInmutable(original);
 		StringBuilder reference = a.getSb();
 		System.out.println(reference);
 		reference.append("=========");
-		System.out.println(a.getSb()); // The sb from NotInmutable has been updated
+		System.out.println(a.getSb()); // The sb from NotInmutable has been
+										// updated
 
 		// Second try, with protected constructor
 		original = new StringBuilder("My initial string");
@@ -36,9 +37,11 @@ class NotInmutable{
 		reference = b.getProtectedSb();
 		System.out.println(reference);
 		reference.append("=========");
-		System.out.println(b.getProtectedSb()); // No change => Getter is protected
+		System.out.println(b.getProtectedSb()); // No change => Getter is
+												// protected
 		original.append("++++");
-		System.out.println(b.getProtectedSb()); // No change => constructor is protected
+		System.out.println(b.getProtectedSb()); // No change => constructor is
+												// protected
 
 	}
 }

@@ -1,25 +1,25 @@
 package chap4MethodsAndEncapsulation.lambdas;
 
-public class Animal{
+public class Animal {
 	private String name;
 	private boolean canHop;
 	private boolean canRun;
 
-	public Animal(String name, boolean canHop, boolean canRun){
+	public Animal(String name, boolean canHop, boolean canRun) {
 		this.name = name;
 		this.canHop = canHop;
 		this.canRun = canRun;
 	}
 
-	public boolean canHop(){
+	public boolean canHop() {
 		return canHop;
 	}
 
-	public boolean canRun(){
+	public boolean canRun() {
 		return canRun;
 	}
 
-	public String getName(){
+	public String getName() {
 		return name;
 	}
 }
