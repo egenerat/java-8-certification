@@ -10,7 +10,7 @@ Glossary:
 - accessor method: Method used to read an instance variable (= getter)
 - mutator method: <ethod used to change the value of an instance variable (= setter)
 
-
+- access modifier: Defines what other code can refer to the code. Choices are private, protected, public, and default (no modifier)
 
 - member: a field or method in a class
 - field: = instance (non-static) variable in a class
