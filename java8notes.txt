@@ -39,7 +39,6 @@ Glossary:
 - property: What a JavaBean calls an instance variable
 
 - string pool: An area in the JVM where string litterals are stored. The JVM can optimize the use of string litterals by allowing only one instance of a string in a pool.
-- switch statement: A complex decision-making structure in which a single value is evaluated and control jumps to a particular case statement or default block and continues until a break statement is reached or the switch statement finishes. Switch values may be bytes, shorts, chars, ints, enums, as well as classes that wrap primitive data types.
 - for each loop: iterate over Java built-in arrays or objects that implements java.lang.Iterable
 
 
@@ -104,10 +103,18 @@ If r is a reference of type Integer, then unboxing conversion converts r into r.
 
 
 _______________________________________________
-Chapter 4
+Chapter 1
 
--  Identifier first name must be _ $ or a letter (not a digit)
+- Identifier first name must be _ $ or a letter (not a digit)
+- Class Object: protected void finalize()
 
+_______________________________________________
+Chapter 2: Operators and Statements
+
+- switch statement: A complex decision-making structure in which a single value is evaluated and control jumps to a particular case statement or default block and continues until a break statement is reached or the switch statement finishes. Switch values may be bytes, shorts, chars, ints, enums, as well as classes that wrap primitive data types.
+
+double is not a valid data type for a switch
+1.09 is not a valid value for a case 
 _______________________________________________
 Chapter 3
 
@@ -130,6 +137,8 @@ Collection.binarySearch()
 int Integer.parseInt(String s)
 Integer Integer.valueOf(String s)
 Integer Integer.valueOf(int s)
+
+It is possible to save an Integer in a int variable (since java 1.5)
 
 equals 
 - Arrays: does not check the content, only rference equality
@@ -154,6 +163,9 @@ compilation error if declared 0 or > 1 times
 - import static compiles but not static import
 - this() can only be called as a first line of a constructor (not from a method)
 - this() is only callable if the constructor is declared (not valid for default constructor)
+
+- An instance object is needed to call this and super non-static variable super cannot be referenced from a static context
+
 - Question: Is it possible to call the default constructor using this? this can only be called from a constructor inside the same class. If there is a user-defined constructor, there is no default one
 - Lambdas:
 	- return and ; required only if {return 1;}
@@ -167,6 +179,9 @@ compilation error if declared 0 or > 1 times
 _______________________________________________
 Chapter 5:
 - inheritance: The process by which the new child subclass automatically includes any public or protected primitives, objects, or methods defined in the parent class (no private)
+If A contains a private method()
+If B inherits A
+a method in B cannot see method()
 
 - A variable (even public) can be hidden but not overriden
 - Abstract modifier is not implicitly applied to all methods since some can be declared as default

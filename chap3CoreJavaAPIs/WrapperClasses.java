@@ -17,5 +17,7 @@ public class WrapperClasses {
 
 		aBooleanWrapperClass = Boolean.valueOf("true");
 		System.out.println(aBooleanWrapperClass); // true
+
+		int anInt = new Integer(1);
 	}
 }
