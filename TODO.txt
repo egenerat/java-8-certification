@@ -1,0 +1,5 @@
+TODO:
+- Check on official Java tutorial rules for inheriting from 2 interfaces and conflicts
+
+Questions:
+What is the operator ^. In general check all unusual operators
