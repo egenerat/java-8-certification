@@ -23,5 +23,8 @@ class Dates {
 		System.out.println(Period.ofMonths(1));
 		System.out.println(Period.ofMonths(1).ofDays(2));
 		System.out.println(Period.ofDays(2));
+
+		LocalDate date = LocalDate.of(2018, Month.APRIL, 30).plusMonths(-1).plusYears(20);
+		System.out.println(date.getYear() + " " + date.getMonth() + " " + getDayOfMonth());
 	}
 }
