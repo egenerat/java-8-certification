@@ -6,6 +6,13 @@ import java.util.List;
 
 public class ListCourse {
 	public static void main(String... args) {
+
+		List isValid = new ArrayList();
+		isValid.add(123);
+		for (Object i : isValid){
+			System.out.println(i);
+		}
+
 		List<String> aList = new ArrayList<String>();
 		aList.add("Hello");
 
