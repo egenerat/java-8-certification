@@ -59,6 +59,24 @@ General questions:
 - Inmutable types:
 	- String
 	- Dates date.plusDays(2)
+
+Be careful if two answers are expected. For example does not compile, and if fixed the solution would be
+Which types can be passed as a parameter: be careful not to instantiate an abstract class
+
+When there are 2 classes, make sure there is or not inheritance between them, that only one is declared as public
+__________________________
+Compilation error
+Be careful to:
+- Check no public
+- Inheritance:
+	- Be careful to position of this(), even if part of code that are not called
+- Date/Datetime
+__________________________
+Runtime error:
+
+Be careful to:
+public static void main(String... args)
+
 ______________________
 
 
@@ -108,6 +126,11 @@ Chapter 1
 - Identifier first name must be _ $ or a letter (not a digit)
 - Class Object: protected void finalize()
 
+
+a top-level class cannot be declared as static, otherwise does not compile
+Only inner class can be
+
+A field, a method and a construct can share the same identifier
 _______________________________________________
 Chapter 2: Operators and Statements
 
@@ -125,6 +148,10 @@ Chapter 3
 - binarySearch: if not found returns - index - 1 (otherwise conflict with index 0)
 - null for a List<Integer> does not require autoboxing
 - A string can not be assigned to a StringBuilder sb = "foo"
+
+StringBuilder constructor can take only String, char or int (int for capacity!).
+append() is overloaded to take any type in parameter, including primitives
+
 
 - += equivalent to an explicit cast (String a; a+=2 is valid)
 
@@ -231,6 +258,10 @@ A method that declares an exception is not required to throw one
 If two exceptions are thrown (the second in finally) only the second is displayed
 
 Be careful: runtime Exception are not required to be declared: questions: which lines can be inserted so that the code compiles
+
+Finally:
+- No code after finally, otherwise compilation error unreachable code
+- No finally before catch, otherwise compilation error catch without try
 _______________________
 To be sorted:
 
