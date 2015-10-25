@@ -12,11 +12,17 @@ public class SwitchCases{
 			case 1:
 		}
 
-	String year = "Freshman";
+	String year = "Freshman2";
 	switch(year) {
-		case "Freshman" : default: case "Sophomore" :
+		case "Freshman" : default: System.out.println("hello"); case "Sophomore" :
 		case "Junior" : System.out.print("See you next year");
 		case "Senior" : System.out.print("Congratulations");
+	}
+
+	final int foo = 1;
+	switch(anInt){
+		case 0:
+		case foo:
 	}
 
 	}
