@@ -51,6 +51,9 @@ public class ListCourse {
 		// A list can not be passed as a varargs parameter directly
 		methodWithVarargs(list1.toArray(new Integer[list1.size()]));
 		methodWithVarargs(new Integer[] { 1 });
+
+		//  incompatible types: ArrayList<Integer> cannot be converted to List<String>
+		// List<String> aaa = new ArrayList<Integer>();
 	}
 
 	public static <T> void displayList(Iterable<T> anIterable) {

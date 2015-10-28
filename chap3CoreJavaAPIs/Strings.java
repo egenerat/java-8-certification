@@ -18,5 +18,11 @@ public class Strings {
 		// Possible to concatenate a string and a char
 		aString2 += 'c';
 
+		String aaa = "";
+		System.out.println(aaa.length());
+
+		char bbb = 'a';
+		System.out.println(++bbb);
+
 	}
 }

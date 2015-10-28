@@ -16,5 +16,8 @@ class Cast{
 		Object obj = array;
 		// ClassCastException 
 		// String[] array2 = (String[]) obj;
+
+		int aaa = new Integer(789);
+		$l1: System.out.println(aaa);
 	}
 }
