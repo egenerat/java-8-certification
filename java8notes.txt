@@ -8,7 +8,7 @@ Maximum one public class per file : matches the filename
 
 Glossary:
 - accessor method: Method used to read an instance variable (= getter)
-- mutator method: <ethod used to change the value of an instance variable (= setter)
+- mutator method: Method used to change the value of an instance variable (= setter)
 
 - access modifier: Defines what other code can refer to the code. Choices are private, protected, public, and default (no modifier)
 
@@ -20,13 +20,13 @@ Glossary:
 - mutable: an object that can change state
 - immutable: an object that cannot be changed
 
-- label: A pointer to the head of a statement thata allows the application flow to jump to it or break from it. A label is a single-word expression followed by a colon (:).
+- label: A pointer to the head of a statement that allows the application flow to jump to it or break from it. A label is a single-word expression followed by a colon (:).
 
 - litteral: A numeric, character, boolean or String value that is typed in the code
 
 - negation operator: (-) reverses the sign of a numeric expression
 - ternary operator = conditional operator
-- equality operator ==: works with 2 primitive types, boolean values, or  object references are the same /
+- equality operator ==: works with 2 primitive types, boolean values, or  object references are the same
 
 - logical complement operator: given a boolean expression, the operator ! returns the reverse of it.
 
@@ -128,7 +128,7 @@ Chapter 1
 
 
 a top-level class cannot be declared as static, otherwise does not compile
-Only inner class can be
+Only inner class can be declared as static.
 
 A field, a method and a construct can share the same identifier
 _______________________________________________
@@ -152,7 +152,6 @@ Chapter 3
 StringBuilder constructor can take only String, char or int (int for capacity!).
 append() is overloaded to take any type in parameter, including primitives
 
-
 - += equivalent to an explicit cast (String a; a+=2 is valid)
 
 It is not possible to chain on a collection (returns boolean) .add()
@@ -168,7 +167,7 @@ Integer Integer.valueOf(int s)
 It is possible to save an Integer in a int variable (since java 1.5)
 
 equals 
-- Arrays: does not check the content, only rference equality
+- Arrays: does not check the content, only reference equality
 - Collections: content equality
 
 Varargs:
@@ -177,7 +176,7 @@ Varargs:
 
 _______________________________________________
 Chapter 4:
-- Labels are not allowed for methods
+- Labels are not allowed for methods (not a statement)
 - JavaBeans naming conventions: for a boolean: isPropertyName(), not get!
 - It is possible to call a static method on:
 	- className
