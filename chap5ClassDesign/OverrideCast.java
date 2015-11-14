@@ -12,9 +12,17 @@ class Child extends Parent {
 	}
 }
 
+class Other{}
+
 public class OverrideCast {
 	public static void main(String... args) {
 		Parent p = new Child();
 		p.method(); // displays "Parent method"
+
+		// Compilation ok, error at runtime
+		//Parent aaa = (Parent)new Object();
+
+		// incompatible types: Other cannot be converted to Parent
+		// Parent bbb = (Parent)new Other();
 	}
 }

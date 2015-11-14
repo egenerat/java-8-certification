@@ -8,6 +8,7 @@ class Cast{
 		String a = ""+'a';
 
 		int anInt = 1;
+		int anotherInt = 2;
 		// ClassCastException
 		// String test = (String)anInt;
 		String test = Integer.valueOf(anInt).toString();
@@ -19,5 +20,13 @@ class Cast{
 
 		int aaa = new Integer(789);
 		$l1: System.out.println(aaa);
+
+		// Parenthesis have no impact
+		System.out.println(anInt + anotherInt);
+		System.out.println((anInt) + (anotherInt));
+
+		// Addition from left to right: (String + int = String) + int = String
+		System.out.println("Hello "+ anInt + anotherInt);
+		System.out.println("Hello "+ (anInt) + (anotherInt));
 	}
 }
