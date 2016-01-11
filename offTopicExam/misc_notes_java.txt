@@ -1,0 +1,66 @@
+____________________________________
+Java create a jar
+
+In order to create a .jar file, you need to use jar instead of java:
+
+jar cf myJar.jar myClass.class
+
+Additionally, if you want to make it executable, you need to indicate an entry point (i.e., a class with public static void main(String[] args)) for your application. This is usually accomplished by creating a manifest file that contains the Main-Class header (e.g., Main-Class: myClass).
+
+However, as Mark Peters pointed out, with JDK 6, you can use the e option to define the entry point:
+
+jar cfe myJar.jar myClass myClass.class 
+
+Finally, you can execute it:
+
+java -jar myJar.jar
+
+-----------------------------
+Generate Jersey Project
+mvn archetype:generate "-DarchetypeArtifactId=jersey-quickstart-grizzly2" "-DarchetypeGroupId=org.glassfish.jersey.archetypes" "-DinteractiveMode=false" "-DgroupId=com.example" "-DartifactId=simple-service" "-Dpackage=com.example" "-DarchetypeVersion=2.7"
+mvn clean test
+mvn exec:java
+
+War
+mvn archetype:generate "-DarchetypeArtifactId=jersey-quickstart-webapp" "-DarchetypeGroupId=org.glassfish.jersey.archetypes" "-DinteractiveMode=false" "-DgroupId=com.example" "-DartifactId=simple-service-webapp" "-Dpackage=com.example" "-DarchetypeVersion=2.7"
+As with the Grizzly based project, feel free to adjust the groupId, package and/or artifactId of your new web application project. Alternatively, you can change it by updating the new project pom.xml once it gets generated. 
+
+
+---
+Tests
+Note that the surefire plugin (which executes the test) looks for tests contained in files with a particular naming convention. By default the tests included are:
+
+    **/*Test.java
+    **/Test*.java
+    **/*TestCase.java
+
+And the default excludes are:
+
+    **/Abstract*Test.java
+    **/Abstract*TestCase.java
+
+
+mvn eclipse:eclipse
+
+IntelliJIDEA descriptor
+mvn idea:idea
+mvn clean
+mvn site
+
+To use a plug-in, add it to the POM
+Work like a dependency : download and used
+
+
+http://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch04s04.html
+
+__________________________________________
+Java
+
+Utility class (only static methods) : hide public constructor
+public final class MyClass{
+    private MyClass(){}
+
+    public static void myMethod(){}
+}
+
+
