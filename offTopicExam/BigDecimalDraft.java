@@ -4,9 +4,22 @@ import java.math.BigDecimal;
 
 public class BigDecimalDraft {
 	public static void main(String[] args){
+
+		float aZero = 0.00f;
+		float anotherZero = 0f;
+		System.out.println(aZero == anotherZero);
+		// true
+
 		// Using double
-		double aDouble = 1.03 - .42;
-		System.out.println(aDouble);
+		double aDouble = 0.61;
+		System.out.println(0.61); // 0.61
+		System.out.println(1.03);
+		System.out.println(.42);
+		System.out.println(1.03 - .42);
+		
+
+		double aDouble1 = 1.03 - .42;
+		System.out.println(aDouble1);
 		// 0.6100000000000001
 
 		// Using big decimals: subtract in construct
@@ -35,7 +48,8 @@ public class BigDecimalDraft {
 		System.out.format("%f%n", aHugeFloat);
 		// 16777216.000000: problem!!!
 
-		BigDecimal truc = 5.4f;
+		// does not compile
+		//BigDecimal truc = 5.4f;
 
 	}
 
