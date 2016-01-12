@@ -48,9 +48,20 @@ public class BigDecimalDraft {
 		System.out.format("%f%n", aHugeFloat);
 		// 16777216.000000: problem!!!
 
-		// does not compile
+		// Does not compile
 		//BigDecimal truc = 5.4f;
 
+		Float aFloat = 1.03f;
+		System.out.println(aFloat);
+		// 1.03
+
+		BigDecimal bigDecimalFromFloat = new BigDecimal(aFloat);
+		System.out.println(bigDecimalFromFloat);
+		// 1.0299999713897705078125
+
+		bigDecimalFromFloat = new BigDecimal(aFloat.toString());
+		System.out.println(bigDecimalFromFloat);
+		// 1.03
 	}
 
 	public boolean isPositive(BigDecimal aBigDecimal) {
