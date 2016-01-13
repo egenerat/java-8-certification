@@ -1,4 +1,4 @@
-package chap5ClassDesign.exam;
+package oca.chap5ClassDesign.exam;
 
 class Rhinoceros{
 

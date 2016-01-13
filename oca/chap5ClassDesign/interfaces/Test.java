@@ -1,4 +1,4 @@
-package chap5ClassDesign.interfaces;
+package oca.chap5ClassDesign.interfaces;
 
 public class Test {
 	public static void main(String args[]) {

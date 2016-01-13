@@ -1,4 +1,4 @@
-package chap4MethodsAndEncapsulation;
+package oca.chap4MethodsAndEncapsulation;
 
 public class FinalFields{
 	public final String aString;

@@ -1,4 +1,4 @@
-package chap5ClassDesign.trickyAccessModfiers.other;
+package oca.chap5ClassDesign.trickyAccessModfiers.other;
 
 import chap5ClassDesign.trickyAccessModifiers.animal.*;
 

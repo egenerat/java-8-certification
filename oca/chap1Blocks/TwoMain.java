@@ -1,4 +1,4 @@
-package chap1Blocks;
+package oca.chap1Blocks;
 
 //java chap1Blocks.Main1
 class Main1 {

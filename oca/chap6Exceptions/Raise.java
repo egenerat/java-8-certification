@@ -1,4 +1,4 @@
-package chap6Exceptions;
+package oca.chap6Exceptions;
 
 public class Raise {
 	public static void main(String... args) {

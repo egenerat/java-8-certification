@@ -1,10 +1,10 @@
-package chap4MethodsAndEncapsulation;
+package oca.chap4MethodsAndEncapsulation;
 
 public class InitializationOrder {
 
 	private int aNumber = 1;
 
-	public ClassA(){
+	private InitializationOrder(){
 		System.out.println("before construct" +aNumber);
 		aNumber = 45;
 	}

@@ -1,4 +1,4 @@
-package chap6Exceptions;
+package oca.chap6Exceptions;
 
 class NoExceptionThrown {
 	public static void main(String... args) {

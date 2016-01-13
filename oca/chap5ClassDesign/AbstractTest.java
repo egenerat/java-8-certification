@@ -1,4 +1,4 @@
-package chap5ClassDesign;
+package oca.chap5ClassDesign;
 
 abstract class AbstractClass {
 	// Method must be declared abstract (different from interface!)

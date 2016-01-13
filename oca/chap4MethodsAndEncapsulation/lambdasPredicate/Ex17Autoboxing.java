@@ -1,4 +1,4 @@
-package chap4MethodsAndEncapsulation.lambdasPredicate;
+package oca.chap4MethodsAndEncapsulation.lambdasPredicate;
 
 import java.util.function.Predicate;
 

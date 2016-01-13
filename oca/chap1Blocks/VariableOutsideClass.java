@@ -1,6 +1,7 @@
-package chap1Blocks;
+package oca.chap1Blocks;
 
-int i;
+// Does not compile
+//int i;
 public class VariableOutsideClass{
 	public static void main(String... args){
 

@@ -1,4 +1,4 @@
-package chap1Blocks;
+package oca.chap1Blocks;
 
 public class IdentifierConflict{
 

@@ -1,4 +1,4 @@
-package chap5ClassDesign.conflict;
+package oca.chap5ClassDesign.conflict;
 
 interface ParentA {
 	default public void method() {

@@ -1,4 +1,4 @@
-package chap2OperatorsAndStatements;
+package oca.chap2OperatorsAndStatements;
 
 class Cast{
 	public static void main(String... args){

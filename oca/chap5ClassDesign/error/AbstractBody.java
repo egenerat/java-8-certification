@@ -1,4 +1,4 @@
-package chap5ClassDesign.error;
+package oca.chap5ClassDesign.error;
 
 public abstract class AbstractBody {
 	public abstract void dive() {};

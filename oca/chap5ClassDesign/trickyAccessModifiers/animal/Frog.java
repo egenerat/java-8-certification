@@ -1,4 +1,4 @@
-package chap5ClassDesign.trickyAccessModifiers.animal;
+package oca.chap5ClassDesign.trickyAccessModifiers.animal;
 
 public class Frog{
 	protected void ribbit() {};

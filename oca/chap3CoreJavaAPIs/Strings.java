@@ -1,4 +1,4 @@
-package chap3CoreJavaAPIs;
+package oca.chap3CoreJavaAPIs;
 
 public class Strings {
 	public static void main(String[] args) {

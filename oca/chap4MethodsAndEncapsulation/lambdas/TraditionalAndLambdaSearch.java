@@ -1,4 +1,4 @@
-package chap4MethodsAndEncapsulation.lambdas;
+package oca.chap4MethodsAndEncapsulation.lambdas;
 
 import java.util.*;
 //useful lambda search with Predicate

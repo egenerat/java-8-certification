@@ -1,4 +1,4 @@
-package chap5ClassDesign.mainInheritance;
+package oca.chap5ClassDesign.mainInheritance;
 
 public class ChildMain extends ParentMain{
 	public static void main(String ... args ){

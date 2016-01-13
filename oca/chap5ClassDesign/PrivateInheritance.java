@@ -1,4 +1,4 @@
-package chap5ClassDesign;
+package oca.chap5ClassDesign;
 
 class Parent {
 	protected void privateMethod() {

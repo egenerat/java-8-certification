@@ -1,4 +1,6 @@
-package chap4MethodsAndEncapsulation;
+package oca.chap4MethodsAndEncapsulation;
+
+import java.util.function.Predicate;
 
 class SimpleBean {
 
@@ -8,7 +10,7 @@ class SimpleBean {
 }
 
 class Checker {
-	public static testMethod(Predicate<SimpleBean> param){
+	public static void testMethod(Predicate<SimpleBean> param){
 		param.test(5);
 	}
 }
@@ -16,6 +18,6 @@ class Checker {
 public class LambdaSimple {
 	public static void main(String... args){
 		SimpleBean a = new SimpleBean();
-		System.out.println(Checker.testMethod(a->a.getValue()>5);
+		System.out.println(Checker.testMethod(a -> a.getValue() > 5));
 	}
 }

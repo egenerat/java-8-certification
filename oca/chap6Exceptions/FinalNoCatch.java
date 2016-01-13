@@ -1,4 +1,4 @@
-package chap6Exceptions;
+package oca.chap6Exceptions;
 
 public class FinalNoCatch {
 	public static void main(String... args) throws Exception {
