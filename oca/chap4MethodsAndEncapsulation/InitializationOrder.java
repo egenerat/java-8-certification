@@ -11,7 +11,7 @@ public class InitializationOrder {
 
 	public static void main(String[] args) {
 		// System.out.println("before construct" + aNumber); // does not compile
-		ClassA anInstance = new ClassA();
+		InitializationOrder anInstance = new InitializationOrder();
 		System.out.println("after construct" + anInstance.aNumber); // not
 																	// possible
 																	// to

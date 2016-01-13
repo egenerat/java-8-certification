@@ -26,7 +26,7 @@ class HidingOverriding {
 	}
 }
 
-class Child extends HidingOverloading {
+class Child extends HidingOverriding {
 	// String value = "childValue";
 	// static String childStaticString = "BBB";
 
