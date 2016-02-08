@@ -1,3 +1,4 @@
 language: java
 script:
-  - javac ocp/chap1AdvancedClassDesign/InstanceOf.java
+  - javac oca/**/*.java 
+  - javac ocp/**/*.java 
