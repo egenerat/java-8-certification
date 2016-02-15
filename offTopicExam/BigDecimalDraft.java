@@ -35,7 +35,8 @@ public class BigDecimalDraft {
 		System.out.format("%f%n", aHugeFloat);
 		// 16777216.000000: problem!!!
 
-		BigDecimal truc = 5.4f;
+		// does not compile
+		//BigDecimal truc = 5.4f;
 
 	}
 
