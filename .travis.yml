@@ -1,0 +1,4 @@
+language: java
+script:
+  - javac oca/**/*.java 
+  - javac ocp/**/*.java 
