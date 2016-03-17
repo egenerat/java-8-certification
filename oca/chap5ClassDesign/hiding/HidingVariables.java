@@ -1,4 +1,4 @@
-package oca.chap5ClassDesign;
+package oca.chap5ClassDesign.hiding;
 
 class Parent {
 	public int var = 1;

@@ -1,4 +1,4 @@
-package class5ClassDesign;
+package oca.chap5ClassDesign.override;
 
 interface HasTail {
 	int getTailLength();
