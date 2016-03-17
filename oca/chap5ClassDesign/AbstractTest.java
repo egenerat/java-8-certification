@@ -7,6 +7,7 @@ abstract class AbstractClass {
 
 class AbstractTest {
 	public static void main(String[] args) {
-		AbstractClass a = new AbstractClass();
+		// Does not compile
+		// AbstractClass a = new AbstractClass();
 	}
 }

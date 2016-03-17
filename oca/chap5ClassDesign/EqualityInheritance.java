@@ -2,7 +2,7 @@ package oca.chap5ClassDesign;
 
 class Parent{}
 
-class Child extends Parent{}
+class Child extends Parent {}
 
 class NotRelatedClass{}
 

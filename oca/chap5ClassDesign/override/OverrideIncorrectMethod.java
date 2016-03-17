@@ -5,7 +5,11 @@ interface HasTail {
 }
 
 abstract class Puma implements HasTail {
-	protected int getTailLength() {
+	// Does not compile (attempting to assign weaker privileges: protected and default)
+	// A method is supposed public in an interface, not in an abstract class
+	// protected int getTailLength() {
+//	int getTailLength() {
+	public int getTailLength() {
 		return 4;
 	}
 }

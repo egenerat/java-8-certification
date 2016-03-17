@@ -6,7 +6,7 @@ class Parent {
 	}
 }
 
-class Child extends oca.chap5ClassDesign.hiding.Parent {
+class Child extends Parent {
 	public void method() {
 		System.out.println("Child method");
 	}
@@ -16,7 +16,7 @@ class Other{}
 
 public class OverrideCast {
 	public static void main(String... args) {
-		oca.chap5ClassDesign.hiding.Parent p = new oca.chap5ClassDesign.hiding.Child();
+		Parent p = new Child();
 		p.method(); // displays "Parent method"
 
 		// Compilation ok, error at runtime

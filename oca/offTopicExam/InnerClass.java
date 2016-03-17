@@ -1,4 +1,4 @@
-package offTopicExam;
+package oca.offTopicExam;
 
 public class InnerClass {
 
@@ -15,8 +15,9 @@ public class InnerClass {
 	class Child extends Parent {}
 
 	public static void main(String... args){
-		Child a = new PrivateInheritance().new Child();
+		Child a = new InnerClass().new Child();
 		// Does not compile, privateMethod is private
+		// a.privateMethod();
 		a.publicMethod();
 		//Parent b = a;
 		//b.method1();

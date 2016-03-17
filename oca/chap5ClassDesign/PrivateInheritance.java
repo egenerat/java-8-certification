@@ -1,4 +1,4 @@
-package oca.chap5ClassDesign;
+package oca.chap5ClassDesign.error;
 
 class Parent {
 	protected void privateMethod() {

@@ -1,14 +1,15 @@
-package oca.chap5ClassDesign.trickyAccessModfiers.other;
+package oca.chap5ClassDesign.trickyAccessModifiers.other;
 
-import chap5ClassDesign.trickyAccessModifiers.animal.*;
+import oca.chap5ClassDesign.trickyAccessModifiers.animal.*;
 
 public class Tadpole extends Frog{
 	public static void main(String... args){
+		// Commented lines do not compile! => Privilege issues
 		Tadpole t = new Tadpole();
 		t.ribbit();
-		t.jump();
+		//t.jump();
 		Frog f = new Tadpole();
-		f.ribbit();
-		f.jump();
+		//f.ribbit();
+		//f.jump();
 	}
 }
