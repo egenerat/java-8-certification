@@ -14,7 +14,7 @@ public class LambdaExample {
 	public static void main(String... args) {
 		// TODO
 		// Allowed
-		noReturnType(() -> System.out.println());
+		noReturnType(() -> System.out.println("hello"));
 
 		// Do not compile
 		// noReturnType( -> System.out.println());
