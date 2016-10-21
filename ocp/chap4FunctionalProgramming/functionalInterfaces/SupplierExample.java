@@ -1,4 +1,4 @@
-package ocp.chap4FunctionalInterfaces;
+package ocp.chap4FunctionalProgramming.functionalInterfaces;
 
 import java.util.ArrayList;
 import java.util.function.Supplier;
