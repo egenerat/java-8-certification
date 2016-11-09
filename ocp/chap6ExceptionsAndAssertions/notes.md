@@ -11,7 +11,7 @@
 
 ## Assertions
 
-> java -ea -da:ExcludedClass
+> java -ea -da:ExcludedClass MainClass
 
 - ea: enable assertions
 - da: disable assertions
