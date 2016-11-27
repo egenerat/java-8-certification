@@ -17,3 +17,11 @@ Intermediate:
 - map()
 - peak()
 
+
+Unary: special type of function where parameterType = returnType
+
+2 common types: double, int, long
+
+
+### Interesting links:
+- [leveluplunch Stream terminal operations](http://www.leveluplunch.com/java/examples/stream-terminal-operations-example/) 
