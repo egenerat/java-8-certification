@@ -17,7 +17,7 @@ class Other{}
 public class OverrideCast {
 	public static void main(String... args) {
 		Parent p = new Child();
-		p.method(); // displays "Parent method"
+		p.method(); // displays "Child method"
 
 		// Compilation ok, error at runtime
 		//Parent aaa = (Parent)new Object();
